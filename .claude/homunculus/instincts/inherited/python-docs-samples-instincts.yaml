@@ -1,0 +1,344 @@
+# Instincts generated from https://github.com/cvsz/python-docs-samples
+# Generated: 2026-06-05T23:21:45.484Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: python-docs-samples-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the pip group across 71 directories with 6 updates
+
+---
+id: python-docs-samples-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Commit Length
+
+## Action
+
+Write moderate-length commit messages (~68 characters)
+
+## Evidence
+
+- Average commit message length: 68 chars
+- Based on 1 commits
+
+---
+id: python-docs-samples-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: python-docs-samples-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: python-docs-samples-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: python-docs-samples-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: python-docs-samples-workflow-bulk-dependency-update-pip-requirements
+trigger: "when doing bulk dependency update pip requirements"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/cvsz/python-docs-samples
+---
+
+# Python Docs Samples Workflow Bulk Dependency Update Pip Requirements
+
+## Action
+
+Follow the bulk-dependency-update-pip-requirements workflow:
+1. Identify out-of-date dependencies across all subprojects.
+2. Update the relevant dependency version(s) in requirements-test.txt, requirements.txt, and constraints.txt files in each affected directory.
+3. Optionally update setup.py if present.
+4. Commit all changes in a single commit with a detailed message listing all updated dependencies and versions.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: **/requirements-test.txt, **/requirements.txt, **/constraints.txt
+
+---
+id: python-docs-samples-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct File Naming
+
+## Action
+
+Name the file using kebab-case (e.g., sample-file.py)
+
+## Evidence
+
+- Pattern in namingConventions.files: kebab-case
+
+---
+id: python-docs-samples-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., myFunction)
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: python-docs-samples-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., MyClass)
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: python-docs-samples-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., MY_CONSTANT)
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: python-docs-samples-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: python-docs-samples-instinct-export-style
+trigger: "When exporting symbols from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: python-docs-samples-instinct-test-location
+trigger: "When adding tests for a module"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Test Location
+
+## Action
+
+Place tests in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: python-docs-samples-instinct-git-commit-format
+trigger: "When making a commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Git Commit Format
+
+## Action
+
+Format the commit message using the conventional commit style with a prefix (e.g., chore: ...)
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Example: chore(deps): bump the pip group...
+
+---
+id: python-docs-samples-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 68 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength: 68
+
+---
+id: python-docs-samples-instinct-bulk-dependency-update
+trigger: "When dependencies need to be updated across multiple Python sample directories for consistency, security, or new features"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: cvsz/python-docs-samples
+---
+
+# Python Docs Samples Instinct Bulk Dependency Update
+
+## Action
+
+Identify outdated dependencies, update requirements-test.txt, requirements.txt, constraints.txt, and optionally setup.py in each affected directory, then commit all changes in a single commit with a detailed message listing all updated dependencies and versions
+
+## Evidence
+
+- Workflow: bulk-dependency-update-pip-requirements
+- Example commit: chore(deps): bump the pip group across 71 directories with 6 updates
+
