@@ -398,7 +398,7 @@ linkify-it-py==2.0.2
 locket==1.0.0
 lockfile==0.12.2
 looker-sdk==23.10.0
-lxml==4.9.3
+lxml==6.1.0
 lz4==4.3.2
 markdown-it-py==3.0.0
 marshmallow-enum==1.5.1
@@ -492,7 +492,7 @@ pure-sasl==0.6.2
 py-partiql-parser==0.3.3
 py4j==0.10.9.7
 pyOpenSSL==23.2.0
-pyarrow==11.0.0
+pyarrow==14.0.1
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pycountry==22.3.5
@@ -524,7 +524,7 @@ pytest-instafail==0.5.0
 pytest-rerunfailures==12.0
 pytest-timeouts==1.2.1
 pytest-xdist==3.3.1
-pytest==7.4.0
+pytest==9.0.3
 python-arango==7.5.8
 python-daemon==3.0.1
 python-dateutil==2.8.2
